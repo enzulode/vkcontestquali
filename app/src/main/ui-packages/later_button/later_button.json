@@ -1,0 +1,160 @@
+{
+  "name": "later_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "blGWvgsT1hDeNTZgaA2njF",
+    "node": "63:156",
+    "version": "2787954458"
+  },
+  "default": "status=active",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      }
+    ],
+    "modes": {
+      "status=active": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "28.0",
+              "top": "10.0",
+              "right": "28.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Title"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Title",
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$title",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "letter-spacing": "-0.3100000023841858",
+            "line-height": "1.25",
+            "typeface": "Poppins"
+          }
+        ]
+      },
+      "status=inactive": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "28.0",
+              "top": "10.0",
+              "right": "28.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "40.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Title"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "0.11764705882352941",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Title",
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$title",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "16.0",
+            "letter-spacing": "-0.3100000023841858",
+            "line-height": "1.25",
+            "typeface": "Poppins"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "title": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "status=active",
+      "size": {
+        "width": 89.0,
+        "height": 40.0
+      },
+      "parameters": {
+        "title": "Title"
+      }
+    },
+    {
+      "design": "status=inactive",
+      "size": {
+        "width": 89.0,
+        "height": 40.0
+      },
+      "parameters": {
+        "title": "Title"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
