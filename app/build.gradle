@@ -1,11 +1,20 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.relay'
 }
 
 android {
     namespace 'com.enzulode.vkqualiapp'
     compileSdk 32
+
+    sourceSets {
+        main {
+            assets {
+                srcDir("src/main/ui-packages")
+            }
+        }
+    }
 
     defaultConfig {
         applicationId "com.enzulode.vkqualiapp"
