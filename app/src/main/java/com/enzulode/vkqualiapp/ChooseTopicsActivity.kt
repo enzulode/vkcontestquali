@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import com.enzulode.vkqualiapp.ui.components.ContinueBar
 import com.enzulode.vkqualiapp.ui.components.LaterBar
 
 class ChooseTopicsActivity : ComponentActivity()
@@ -20,11 +21,14 @@ class ChooseTopicsActivity : ComponentActivity()
 		setContent {
 
 			Column(
-				modifier = Modifier.background(Color.Black).fillMaxSize(),
+				modifier = Modifier
+					.background(Color.Black)
+					.fillMaxSize(),
 				horizontalAlignment = Alignment.CenterHorizontally
 			)
 			{
 				LaterBar(text = "Отметьте то, что Вам интересно, чтобы настроить Дзен")
+				ContinueBar()
 			}
 
 		}
