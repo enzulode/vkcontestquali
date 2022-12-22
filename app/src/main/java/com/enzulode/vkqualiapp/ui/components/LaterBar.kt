@@ -19,6 +19,7 @@ fun LaterBar(text: String)
 	Box(
 		modifier = Modifier
 			.fillMaxWidth()
+			.padding(5.dp)
 	)
 	{
 		Row(
