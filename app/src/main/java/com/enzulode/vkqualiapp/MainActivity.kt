@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity()
 					modifier = Modifier.pointerInput(Unit)
 					{
 						detectTapGestures {
-							var intent = Intent(this@MainActivity, ChooseTopicsActivity::class.java)
+							val intent = Intent(this@MainActivity, ChooseTopicsActivity::class.java)
 							startActivity(intent)
 						}
 					}
