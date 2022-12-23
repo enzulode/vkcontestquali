@@ -10,12 +10,14 @@
 - Created composable button bars' functions
 - Implemented main part (ChooseTopicsActivity) with lots of topic chirps
 - Provide an ability to handle topics' chirps and detect which of them are active
+- Implement final activity
+- Implement an ability to exit ChooseTopicsActivity to FinalActivity
 
 
 ## TODO:
 
-- Implement final activity
-- Implement an ability to exit ChooseTopicsActivity to FinalActivity
+- Implement an ability to store chosen topic chirps
+- Make continue button inactive if less than three topics chosen
 
 ## Screenshots:
 
@@ -35,6 +37,13 @@ width="40%"
 
 <img 
 src="https://github.com/enzulode/vkcontestquali/raw/master/docs/screenshot_choose_topics_activity_with_chosen_topics.jpg"
+alt="ChooseTopicsActivity screenshot: some of topics are selected"
+height="40%"
+width="40%"
+/>
+
+<img
+src="https://github.com/enzulode/vkcontestquali/raw/master/docs/screenshot_final_activity.jpg"
 alt="ChooseTopicsActivity screenshot: some of topics are selected"
 height="40%"
 width="40%"
