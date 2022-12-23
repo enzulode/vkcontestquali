@@ -1,5 +1,6 @@
 package com.enzulode.vkqualiapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -29,7 +30,13 @@ class ChooseTopicsActivity : ComponentActivity()
 				horizontalAlignment = Alignment.CenterHorizontally
 			)
 			{
-				LaterBar(text = "Отметьте то, что Вам интересно, чтобы настроить Дзен")
+				LaterBar(
+					text = "Отметьте то, что Вам интересно, чтобы настроить Дзен",
+					onClick = {
+						val intent = Intent(this@ChooseTopicsActivity, FinalActivity::class.java)
+						startActivity(intent)
+					}
+				)
 
 				val testTopics = mutableListOf(
 					Topic(1, "Юмор"),
