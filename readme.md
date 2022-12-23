@@ -16,5 +16,23 @@
 
 ## Screenshots:
 
-<img src="https://github.com/enzulode/vkcontestquali/raw/master/docs/screenshot_main_activity.jpg" alt="MainActivity screenshot" height="40%" width="40%"/>
-<img src="https://github.com/enzulode/vkcontestquali/raw/master/docs/screenshot_choose_topics_activity.jpg" alt="ChooseTopicsActivity screenshot" height="40%" width="40%"/>
+<img
+src="https://github.com/enzulode/vkcontestquali/raw/master/docs/screenshot_main_activity.jpg"
+alt="MainActivity screenshot" 
+height="40%" 
+width="40%"
+/>
+
+<img 
+src="https://github.com/enzulode/vkcontestquali/raw/master/docs/screenshot_choose_topics_activity.jpg" 
+alt="ChooseTopicsActivity screenshot" 
+height="40%" 
+width="40%"
+/>
+
+<img 
+src="https://github.com/enzulode/vkcontestquali/raw/master/docs/screenshot_choose_topics_activity_with_chosen_topics.jpg"
+alt="ChooseTopicsActivity screenshot: some of topics are selected"
+height="40%"
+width="40%"
+/>
