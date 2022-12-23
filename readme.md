@@ -9,10 +9,13 @@
 - Designed components for task implementation (diversiform buttons)
 - Created composable button bars' functions
 - Implemented main part (ChooseTopicsActivity) with lots of topic chirps
+- Provide an ability to handle topics' chirps and detect which of them are active
+
 
 ## TODO:
 
-- Provide an ability to handle topics' chirps and detect which of them are active
+- Implement final activity
+- Implement an ability to exit ChooseTopicsActivity to FinalActivity
 
 ## Screenshots:
 
