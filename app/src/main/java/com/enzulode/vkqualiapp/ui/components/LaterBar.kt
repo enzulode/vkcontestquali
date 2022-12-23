@@ -17,7 +17,7 @@ import com.enzulode.vkqualiapp.laterbutton.LaterButton
 import com.enzulode.vkqualiapp.laterbutton.Status
 
 @Composable
-fun LaterBar(text: String)
+fun LaterBar(text: String, onClick: () -> Unit = {})
 {
 
 	val laterButton = remember {
@@ -68,10 +68,15 @@ fun LaterBar(text: String)
 							.padding(8.dp)
 							.pointerInput(Unit) {
 								detectTapGestures {
+
 									if (laterButton.value == Status.Inactive)
-										laterButton.value = Status.Active
+									{
+										onClick()
+									}
 									else
+									{
 										laterButton.value = Status.Inactive
+									}
 								}
 							}
 					)
