@@ -4,14 +4,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
-import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.input.pointer.pointerInput
 import com.enzulode.vkqualiapp.repositories.Topic
-import com.enzulode.vkqualiapp.topicchirp.TopicChirp
 import com.enzulode.vkqualiapp.ui.components.ContinueBar
 import com.enzulode.vkqualiapp.ui.components.LaterBar
 import com.enzulode.vkqualiapp.ui.components.TopicsPart

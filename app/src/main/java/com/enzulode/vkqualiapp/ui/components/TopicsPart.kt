@@ -1,12 +1,11 @@
 package com.enzulode.vkqualiapp.ui.components
 
-import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -18,11 +17,7 @@ import kotlin.math.max
 @Composable
 fun TopicsPart(topics: List<Topic>)
 {
-	val availableTopics = remember {
-		topics.toMutableList()
-	}
-
-	var listOfActive: List<Int> = mutableListOf()
+	val mapOfActive: Map<Int, Boolean> = mutableMapOf()
 
 	Box(
 		modifier = Modifier
@@ -42,30 +37,43 @@ fun TopicsPart(topics: List<Topic>)
 			{
 
 				topics.forEach { topic ->
+					val stat = remember {
+						mutableStateOf(Status.Inactive)
+					}
 
 					TopicChirp(
 						title = topic.title,
-						status = topic.status,
+						onTapped = {
+								   if (stat.value == Status.Inactive)
+								   {
+									   stat.value = Status.Active
+									   if (!mapOfActive.contains(topic.id))
+									   {
+										   mapOfActive.plus(Pair(topic.id, true))
+									   }
+									   else if (!mapOfActive[topic.id]!!)
+									   {
+										   mapOfActive.plus(Pair(topic.id, true))
+									   }
+								   }
+								   else
+								   {
+									   stat.value = Status.Inactive
+									   if (!mapOfActive.contains(topic.id))
+									   {
+										   mapOfActive.plus(Pair(topic.id, false))
+									   }
+									   else if (mapOfActive[topic.id]!!)
+									   {
+										   mapOfActive.plus(Pair(topic.id, false))
+									   }
+								   }
+
+						},
+						status = stat.value,
 						modifier = Modifier
 							.padding(5.dp)
-							.pointerInput(Unit)
-							{
-								detectTapGestures {
-
-									if (!listOfActive.contains(topic.id) && topic.status == Status.Inactive)
-									{
-										listOfActive = listOfActive.plus(topic.id)
-										topic.status = Status.Active
-									}
-									else
-									{
-										listOfActive = listOfActive.drop(listOfActive.binarySearch(topic.id))
-										topic.status = Status.Inactive
-									}
-								}
-							}
 					)
-
 				}
 
 			}
