@@ -1,0 +1,376 @@
+{
+  "name": "topic_chirp",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "blGWvgsT1hDeNTZgaA2njF",
+    "node": "66:112",
+    "version": "2788910561"
+  },
+  "default": "status=inactive",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Text Layout"
+      },
+      {
+        "type": "group",
+        "id": "Right"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      },
+      {
+        "type": "vector",
+        "id": "Divider"
+      },
+      {
+        "type": "group",
+        "id": "24 / Plus"
+      },
+      {
+        "type": "vector",
+        "id": "Icon"
+      },
+      {
+        "type": "group",
+        "id": "24 / check"
+      }
+    ],
+    "modes": {
+      "status=inactive": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "12.0",
+              "top": "8.0",
+              "right": "8.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "12.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-alignment": "center",
+            "arrangement": "row",
+            "children": [
+              "Text Layout",
+              "Right"
+            ],
+            "item-spacing": "6.0",
+            "background-color": {
+              "alpha": "0.16862745098039217",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Text Layout",
+            "padding": {
+              "top": "1.0",
+              "bottom": "3.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Title"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Right",
+            "padding": {
+              "left": "8.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Divider",
+              "24 / Plus"
+            ],
+            "item-spacing": "8.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Title",
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$title",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.3100000023841858",
+            "line-height": "1.25",
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "Divider",
+            "border-radius": "1.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            },
+            "vector-content": "divider.svg"
+          },
+          {
+            "id": "24 / Plus",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon",
+            "margin": "3.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "icon.svg"
+          }
+        ]
+      },
+      "status=active": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "12.0",
+              "top": "8.0",
+              "right": "8.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "12.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-alignment": "center",
+            "arrangement": "row",
+            "children": [
+              "Text Layout",
+              "Right"
+            ],
+            "item-spacing": "6.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "15.517241379310345",
+              "saturation": "0.9098039215686274",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Text Layout",
+            "padding": {
+              "top": "1.0",
+              "bottom": "3.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Title"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Right",
+            "padding": {
+              "left": "8.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Divider",
+              "24 / check"
+            ],
+            "item-spacing": "8.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Title",
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$title",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "16.0",
+            "letter-spacing": "-0.3100000023841858",
+            "line-height": "1.25",
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "Divider",
+            "border-radius": "1.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "20.0"
+              }
+            }
+          },
+          {
+            "id": "24 / check",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Icon"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon",
+            "margin": {
+              "left": "3.0",
+              "top": "6.0",
+              "right": "3.0",
+              "bottom": "5.00360107421875"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "icon1.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "title": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "status=inactive",
+      "size": {
+        "width": 166.0,
+        "height": 40.0
+      },
+      "parameters": {
+        "title": "Автомобили"
+      }
+    },
+    {
+      "design": "status=active",
+      "size": {
+        "width": 166.0,
+        "height": 40.0
+      },
+      "parameters": {
+        "title": "Автомобили"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
