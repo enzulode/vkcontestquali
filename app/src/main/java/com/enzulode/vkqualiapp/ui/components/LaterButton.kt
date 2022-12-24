@@ -18,11 +18,7 @@ import com.google.relay.compose.RelayContainer
 import com.google.relay.compose.RelayContainerArrangement
 import com.google.relay.compose.RelayContainerScope
 import com.google.relay.compose.RelayText
-
-enum class Status {
-	Inactive,
-	Active
-}
+import com.enzulode.vkqualiapp.ui.components.util.Status
 
 @Composable
 fun LaterButton(
