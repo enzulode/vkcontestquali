@@ -8,11 +8,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColors(
-	primary = DefaultTextColor,
-	primaryVariant = Color.Black,
-	secondary = SecondaryTextColor,
-	background = Color.Black,
-	surface = Color.Black
+	primary = DarkPrimaryColor,
+	secondary = DarkSecondaryColor,
+	background = DarkBackgroundColor,
+	surface = DarkSurfaceColor
 )
 
 private val LightColorPalette = lightColors(
@@ -35,13 +34,15 @@ private val LightColorPalette = lightColors(
 @Composable
 fun VkQualiAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit)
 {
-	val colors = if (darkTheme)
-	{
-		DarkColorPalette
-	} else
-	{
-		LightColorPalette
-	}
+//	val colors = if (darkTheme)
+//	{
+//		DarkColorPalette
+//	} else
+//	{
+//		LightColorPalette
+//	}
+
+	val colors = DarkColorPalette
 
 	MaterialTheme(
 		colors = colors,
