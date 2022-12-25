@@ -14,10 +14,10 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
-import com.google.relay.compose.RelayContainer
-import com.google.relay.compose.RelayContainerArrangement
-import com.google.relay.compose.RelayContainerScope
-import com.google.relay.compose.RelayText
+import com.enzulode.vkqualiapp.ui.components.util.RelayContainer
+import com.enzulode.vkqualiapp.ui.components.util.RelayContainerArrangement
+import com.enzulode.vkqualiapp.ui.components.util.RelayContainerScope
+import com.enzulode.vkqualiapp.ui.components.util.RelayText
 import com.enzulode.vkqualiapp.ui.components.util.Status
 
 

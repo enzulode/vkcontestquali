@@ -53,12 +53,9 @@ class MainActivity : ComponentActivity()
 				LaterButton(
 					title = "Далее",
 					status = laterButtonState.value,
-					modifier = Modifier.pointerInput(Unit)
-					{
-						detectTapGestures {
-							val intent = Intent(this@MainActivity, ChooseTopicsActivity::class.java)
-							startActivity(intent)
-						}
+					onTapped = {
+						val intent = Intent(this@MainActivity, ChooseTopicsActivity::class.java)
+						startActivity(intent)
 					}
 				)
 			}

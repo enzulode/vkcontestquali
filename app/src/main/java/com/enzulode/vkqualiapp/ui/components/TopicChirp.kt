@@ -16,8 +16,8 @@ import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import com.enzulode.vkqualiapp.R
 import com.enzulode.vkqualiapp.ui.components.util.Status
-import com.google.relay.compose.*
-import com.google.relay.compose.CrossAxisAlignment
+import com.enzulode.vkqualiapp.ui.components.util.*
+import com.enzulode.vkqualiapp.ui.components.util.CrossAxisAlignment
 
 @Composable
 fun TopicChirp(

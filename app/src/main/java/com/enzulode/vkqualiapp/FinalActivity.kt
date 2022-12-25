@@ -11,7 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
-import com.google.relay.compose.BoxScopeInstanceImpl.align
+import com.enzulode.vkqualiapp.ui.components.util.BoxScopeInstanceImpl.align
 
 class FinalActivity : ComponentActivity()
 {
