@@ -26,7 +26,8 @@ fun ContinueButton(
 	modifier: Modifier = Modifier,
 	status: Status = Status.Active,
 	title: String = "Test",
-	onTapped: () -> Unit = {}
+	onTapped: () -> Unit = {},
+	disabled: Boolean = false
 ) {
 
 	val currentStatus = remember {
@@ -39,8 +40,11 @@ fun ContinueButton(
 				.pointerInput(Unit)
 				{
 					detectTapGestures {
-						currentStatus.value = Status.Active
-						onTapped()
+						if (!disabled)
+						{
+							currentStatus.value = Status.Active
+							onTapped()
+						}
 					}
 				}
 		)
@@ -52,8 +56,11 @@ fun ContinueButton(
 				.pointerInput(Unit)
 				{
 					detectTapGestures {
-						currentStatus.value = Status.Inactive
-						onTapped()
+						if (!disabled)
+						{
+							currentStatus.value = Status.Inactive
+							onTapped()
+						}
 					}
 				}
 		)
