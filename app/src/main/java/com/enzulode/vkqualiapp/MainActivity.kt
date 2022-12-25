@@ -16,8 +16,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
-import com.enzulode.vkqualiapp.laterbutton.LaterButton
-import com.enzulode.vkqualiapp.laterbutton.Status
+import com.enzulode.vkqualiapp.ui.components.LaterButton
+import com.enzulode.vkqualiapp.ui.components.util.Status
 import com.enzulode.vkqualiapp.ui.theme.VkQualiAppTheme
 
 class MainActivity : ComponentActivity()
